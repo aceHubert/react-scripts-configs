@@ -1,4 +1,4 @@
-## react-scripts-override
+## react-scripts-configs
 override react-scripts config
 
 ### Usage
@@ -6,8 +6,10 @@ add "override-config.js" and "override-paths.js" to root directory
 
 ```bash
 //override-config.js
+//or
+//override-config.dev.js/override-config.prod.js/override-config.test.js
 
-module.exports = (config) => {
+module.exports = (config, env) => {
 
   return config;
 }

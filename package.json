@@ -1,15 +1,14 @@
 {
-  "name": "react-scripts-conf",
-  "version": "0.0.1",
+  "name": "react-scripts-configs",
+  "version": "0.0.6",
   "description": "override react-scripts config",
   "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aceHubert/react-scripts-override.git"
   },
-  "bin": "dist/src/index.js",
-  "scripts": {
-    "prepubl¡sh": "./build/prepare.sh"
+  "bin": {
+    "react-scripts-configs": "./bin/react-scripts-configs.js"
   },
   "keywords": [
     "react",
@@ -18,10 +17,5 @@
     "config"
   ],
   "author": "hubert <yi.xiang@live.cn>",
-  "license": "MIT",
-  "devDependencies": {
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-1": "^6.24.1",
-    "babel-runtime": "^6.26.0"
-  }
+  "license": "MIT"
 }

@@ -1,6 +1,8 @@
+#!/usr/bin/env node
+
 /*
   本模块运行react-scripts里的脚本 (Create React App)
-  可以自定义webpack配置，通过在项目根目录创建"config-override.dev.js" 、 "config-override.prod.js","config-override.js" 文件.
+  可以自定义webpack配置，通过在项目根目录创建"override-paths.dev.js" 、 "override-paths.prod.js","override-paths.js" 文件.
 
   A config-overrides file should export a single function that takes a
   config and modifies it as necessary.
