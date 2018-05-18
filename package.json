@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/aceHubert/react-scripts-override.git"
   },
-  "bin": "src/index.js",
+  "bin": "dist/src/index.js",
   "scripts": {
     "prepubl¡sh": "./build/prepare.sh"
   },
