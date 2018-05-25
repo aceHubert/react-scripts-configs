@@ -1,5 +1,11 @@
-## react-scripts-configs
+# react-scripts-configs
 override react-scripts config
+
+## Installation
+
+```bash
+yarn add react-scripts-configs
+```
 
 ### Usage
 add "override-config.js" and "override-paths.js" to root directory
@@ -27,9 +33,9 @@ then update "scripts" section in package.json
 //package.json
 
   "scripts": {
-    "start": "react-scripts-override start",
-    "build": "react-scripts-override build",
-    "test": "react-scripts-override test",
+    "start": "react-scripts-configs start",
+    "build": "react-scripts-configs build",
+    "test": "react-scripts-configs test",
   }
 ```
 
