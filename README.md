@@ -16,7 +16,11 @@ add "override-config.js" and "override-paths.js" to root directory
 //override-config.dev.js/override-config.prod.js/override-config.test.js
 
 module.exports = (config, env) => {
-
+  if(env==='test'){
+    //JestConfig
+    return config
+  }
+  //WebpackConfig
   return config;
 }
 ```
@@ -24,7 +28,12 @@ module.exports = (config, env) => {
 //override-paths.js
 
 module.exports = (paths)=>{
-
+  //appBuild: 'build',
+  //appPublic: 'public',
+  //appHtml: 'public/index.html',
+  //appIndexJs: 'src/index.js',
+  //appPackageJson: 'package.json',
+  //appSrc: 'src',
   return paths;
 }
 ```

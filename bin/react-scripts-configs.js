@@ -65,11 +65,11 @@ case 'test':
     proxyquire('react-scripts/scripts/test.js', {
       ...pathInject,
       // When test.js asks for '../utils/createJestConfig' it will get this instead:
-      '../utils/createJestConfig': (...args) => {
+      './utils/createJestConfig': (...args) => {
         // Use the existing createJestConfig function to create a config, then pass
         // it through the customizer
         var createJestConfig = require('react-scripts/scripts/utils/createJestConfig');
-        return customizer(createJestConfig(...args), 'test');
+        return customizer(createJestConfig(...args), process.env.NODE_ENV);
       }
     });
     break;
