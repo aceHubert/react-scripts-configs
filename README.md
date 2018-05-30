@@ -16,6 +16,7 @@ add "override-config.js" and "override-paths.js" to root directory
 //override-config.dev.js/override-config.prod.js/override-config.test.js
 
 module.exports = (config, env) => {
+  //env:development | production | test
   if(env==='test'){
     //JestConfig
     return config
