@@ -1,6 +1,6 @@
 {
   "name": "react-scripts-configs",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "override react-scripts config",
   "private": false,
   "repository": {
@@ -17,5 +17,8 @@
     "config"
   ],
   "author": "hubert <yi.xiang@live.cn>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "proxyquire": "^2.0.1"
+  }
 }
